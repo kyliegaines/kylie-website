@@ -1,0 +1,47 @@
+{{ define "main" }}
+<article class="page">
+  <div class="container">
+    <h1 class="page-title">Teaching</h1>
+
+    {{ with .Site.Data.teaching }}
+
+    {{ if .courses }}
+    <h2>Teaching Experience</h2>
+    {{ range .courses }}
+    <div class="teaching-entry">
+      <h3>{{ .course }} {{ with .code }}<span class="course-code">({{ . }})</span>{{ end }}</h3>
+      <p class="teaching-role">{{ .role }}</p>
+      <p class="teaching-meta">{{ with .professor }}Professor {{ . }} · {{ end }}{{ .institution }}{{ with .term }} · {{ . }}{{ end }}</p>
+      {{ with .description }}
+      <details class="teaching-description">
+        <summary>Course Description</summary>
+        <p>{{ . }}</p>
+      </details>
+      {{ end }}
+      <div class="teaching-links">
+        {{ with .syllabus }}<a href="{{ . | relURL }}" class="paper-link" target="_blank">Syllabus</a>{{ end }}
+        {{ with .evaluations }}<a href="{{ . | relURL }}" class="paper-link" target="_blank">Evaluations</a>{{ end }}
+      </div>
+    </div>
+    {{ end }}
+    {{ end }}
+
+    {{ with .evaluations_link }}
+    <h2>Student Evaluations</h2>
+    <p><a href="{{ . | relURL }}" class="btn btn-secondary" target="_blank">View Student Evaluations</a></p>
+    {{ end }}
+
+    {{ if .cv_of_failure }}
+    {{ if .cv_of_failure.enabled }}
+    <h2>CV of Failure</h2>
+    <div class="cv-failure">
+      <p>{{ .cv_of_failure.description }}</p>
+      {{ with .cv_of_failure.credit }}<p class="cv-failure-credit">Inspired by {{ . }}{{ with $.Site.Data.teaching.cv_of_failure.credit_link }} — <a href="{{ . }}" target="_blank">read more</a>{{ end }}.</p>{{ end }}
+    </div>
+    {{ end }}
+    {{ end }}
+
+    {{ end }}
+  </div>
+</article>
+{{ end }}

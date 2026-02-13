@@ -1,0 +1,44 @@
+# ============================================================
+#  PRESENTATIONS — Edit this file to update conference talks!
+# ============================================================
+
+presentations:
+  - event: "American Political Science Association Annual Meeting"
+    year: 2025
+    type: "Paper Presentation"
+    slides: ""
+
+  - event: "UCSB Political Science Colloquium"
+    year: 2025
+    type: "Presentation"
+    slides: ""
+
+  - event: "Archives Unbound: Cedric J. and Elizabeth P. Robinson Conference"
+    year: 2024
+    type: "Presentation"
+    slides: ""
+
+  - event: "Western Political Science Association Annual Meeting"
+    year: 2023
+    type: "Paper Presentation"
+    slides: ""
+
+  - event: "American Political Science Association Annual Meeting"
+    year: 2023
+    type: "Paper Presentation"
+    slides: ""
+
+  - event: "University of California, Santa Barbara (Guest Lecture)"
+    year: 2021
+    type: "Guest Lecture"
+    slides: ""
+
+  - event: "Western Political Science Association Annual Meeting"
+    year: 2020
+    type: "Paper Presentation"
+    slides: ""
+
+  - event: "California State University, Bakersfield (Guest Lecture)"
+    year: 2020
+    type: "Guest Lecture"
+    slides: ""

@@ -1,0 +1,33 @@
+# ============================================================
+#  AWARDS, GRANTS & FELLOWSHIPS
+#  Edit this file to add new awards.
+# ============================================================
+
+awards:
+  - name: "UCSB Political Science Graduate Student Grant"
+    source: ""
+    year: "2025"
+
+  - name: "University of California Academic Senate Doctoral Grant"
+    source: ""
+    year: "2025"
+
+  - name: "Kennedy/Graves Award"
+    source: "UCSB"
+    year: "2025"
+
+  - name: "Lead Teaching Assistant"
+    source: "UCSB"
+    year: "2024-2025"
+
+  - name: "Doctoral Scholars Fellowship"
+    source: "UCSB"
+    year: "2020"
+
+  - name: "Dr. Charles McCall Award"
+    source: "CSUB"
+    year: "2020"
+
+  - name: "B.A. Magna Cum Laude"
+    source: "CSUB"
+    year: "2020"

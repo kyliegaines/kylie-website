@@ -1,0 +1,164 @@
+{{ define "main" }}
+<article class="page">
+  <div class="container">
+    <h1 class="page-title">Research</h1>
+
+    <p class="page-intro">My research focuses on race and politics in the United States. I study Black political thought, ethnic nationalism, political identity formation, and environmental justice using qualitative and quantitative methods.</p>
+
+    {{ with .Site.Data.papers }}
+
+    <!-- Collaboration banner -->
+    {{ with .collaboration_note }}
+    <div class="collaboration-banner">
+      <p>{{ . }}</p>
+    </div>
+    {{ end }}
+
+    {{ range .working_paper_categories }}
+    <h2>{{ .name }}</h2>
+    {{ range .papers }}
+    <div class="paper-entry">
+      <p class="paper-title">{{ .title }}</p>
+      <p class="paper-authors">{{ .authors | safeHTML }}{{ with .year }} ({{ . }}){{ end }}</p>
+      {{ with .status }}<span class="paper-status">{{ . }}</span>{{ end }}
+      {{ with .research_question }}
+      <p class="research-question"><strong>RQ:</strong> {{ . }}</p>
+      {{ end }}
+      {{ with .conferences }}
+      {{ if gt (len .) 0 }}
+      <p class="paper-conferences">Presented at: {{ range $i, $c := . }}{{ if $i }}, {{ end }}{{ $c }}{{ end }}</p>
+      {{ end }}
+      {{ end }}
+      <div class="paper-links">
+        {{ with .pdf }}<a href="{{ . | relURL }}" class="paper-link" target="_blank">PDF</a>{{ end }}
+        {{ with .slides }}<a href="{{ . | relURL }}" class="paper-link" target="_blank">Slides</a>{{ end }}
+        {{ with .poster }}<a href="{{ . | relURL }}" class="paper-link" target="_blank">Poster</a>{{ end }}
+        {{ with .replication }}<a href="{{ . | relURL }}" class="paper-link" target="_blank">Replication</a>{{ end }}
+        {{ with .doi }}<a href="{{ . }}" class="paper-link" target="_blank">DOI</a>{{ end }}
+      </div>
+      {{ with .abstract }}
+      <details class="paper-abstract">
+        <summary>Abstract</summary>
+        <p>{{ . }}</p>
+      </details>
+      {{ end }}
+      {{ if .figure }}
+      <details class="paper-figure-details">
+        <summary>Figure</summary>
+        <div class="paper-figure">
+          <img src="{{ .figure | relURL }}" alt="{{ .figure_caption | default "Paper figure" }}" loading="lazy">
+          {{ with .figure_caption }}<p class="figure-caption">{{ . }}</p>{{ end }}
+        </div>
+      </details>
+      {{ end }}
+      {{ with .figures }}
+      <details class="paper-figure-details">
+        <summary>Figures ({{ len . }})</summary>
+        {{ range . }}
+        <div class="paper-figure">
+          <img src="{{ .src | relURL }}" alt="{{ .caption | default "Paper figure" }}" loading="lazy">
+          {{ with .caption }}<p class="figure-caption">{{ . }}</p>{{ end }}
+        </div>
+        {{ end }}
+      </details>
+      {{ end }}
+    </div>
+    {{ end }}
+    {{ end }}
+
+    {{ if .published }}
+    <h2>Peer-Reviewed Publications</h2>
+    {{ range .published }}
+    <div class="paper-entry">
+      <p class="paper-title">{{ .title }}</p>
+      <p class="paper-authors">{{ .authors | safeHTML }}{{ with .year }} ({{ . }}){{ end }}. <em>{{ .journal }}</em>{{ with .volume }}, {{ . }}{{ end }}.</p>
+      {{ with .status }}<span class="paper-status">{{ . }}</span>{{ end }}
+      {{ with .research_question }}
+      <p class="research-question"><strong>RQ:</strong> {{ . }}</p>
+      {{ end }}
+      <div class="paper-links">
+        {{ with .pdf }}<a href="{{ . | relURL }}" class="paper-link" target="_blank">PDF</a>{{ end }}
+        {{ with .doi }}<a href="{{ . }}" class="paper-link" target="_blank">DOI</a>{{ end }}
+        {{ with .slides }}<a href="{{ . | relURL }}" class="paper-link" target="_blank">Slides</a>{{ end }}
+        {{ with .replication }}<a href="{{ . | relURL }}" class="paper-link" target="_blank">Replication</a>{{ end }}
+      </div>
+      {{ with .abstract }}
+      <details class="paper-abstract">
+        <summary>Abstract</summary>
+        <p>{{ . }}</p>
+      </details>
+      {{ end }}
+      {{ if .figure }}
+      <details class="paper-figure-details">
+        <summary>Figure</summary>
+        <div class="paper-figure">
+          <img src="{{ .figure | relURL }}" alt="{{ .figure_caption | default "Paper figure" }}" loading="lazy">
+          {{ with .figure_caption }}<p class="figure-caption">{{ . }}</p>{{ end }}
+        </div>
+      </details>
+      {{ end }}
+      {{ with .figures }}
+      <details class="paper-figure-details">
+        <summary>Figures ({{ len . }})</summary>
+        {{ range . }}
+        <div class="paper-figure">
+          <img src="{{ .src | relURL }}" alt="{{ .caption | default "Paper figure" }}" loading="lazy">
+          {{ with .caption }}<p class="figure-caption">{{ . }}</p>{{ end }}
+        </div>
+        {{ end }}
+      </details>
+      {{ end }}
+    </div>
+    {{ end }}
+    {{ end }}
+    {{ end }}
+
+    <!-- Public Writing -->
+    <h2>Public Writing</h2>
+    <div class="paper-entry">
+      <p class="paper-title">How ethnic nationalism can help explain Black and Asian American support for Black Lives Matter</p>
+      <p class="paper-authors"><strong>Gaines, K.</strong>, & Lien, P.-T. (2025). <em>LSE US Politics and Policy Blog</em>.</p>
+    </div>
+
+    <!-- Presentations -->
+    {{ with .Site.Data.presentations }}
+    {{ if .presentations }}
+    <h2>Conference Presentations & Talks</h2>
+    <div class="presentations-list">
+      {{ range .presentations }}
+      <div class="presentation-entry">
+        <span class="presentation-year">{{ .year }}</span>
+        <span class="presentation-event">{{ .event }}</span>
+        <span class="presentation-type">{{ .type }}</span>
+        <span class="presentation-links">
+          {{ with .slides }}<a href="{{ . | relURL }}" class="paper-link" target="_blank">Slides</a>{{ end }}
+          {{ with .poster }}<a href="{{ . | relURL }}" class="paper-link" target="_blank">Poster</a>{{ end }}
+        </span>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+    {{ end }}
+
+    <!-- Models & Code -->
+    {{ with .Site.Data.models }}
+    {{ if .models }}
+    {{ if gt (len .models) 0 }}
+    <h2>Models & Code</h2>
+    <div class="models-grid">
+      {{ range .models }}
+      <div class="model-card">
+        <div class="model-type">{{ .type | upper }}</div>
+        <h3><a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a></h3>
+        <p>{{ .description }}</p>
+        {{ with .paper }}<p class="model-paper">Related paper: {{ . }}</p>{{ end }}
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+    {{ end }}
+    {{ end }}
+
+  </div>
+</article>
+{{ end }}

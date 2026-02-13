@@ -1,0 +1,59 @@
+baseURL = "https://kyliegaines.com/"
+languageCode = "en-us"
+title = "Kylie Gaines"
+# No external theme — uses local layouts/
+
+# Clean URLs
+[permalinks]
+  [permalinks.page]
+    research = "/research/"
+    teaching = "/teaching/"
+
+[params]
+  author = "Kylie Gaines"
+  description = "PhD Candidate in Political Science at UC Santa Barbara. Research on race and politics, Black political thought, and environmental justice."
+  profileImage = "img/profile.jpg"
+  email = "kyliegaines@ucsb.edu"
+  institution = "University of California, Santa Barbara"
+  department = "Department of Political Science"
+  lab = ""
+  googleAnalytics = ""
+  cvFile = "files/CV_Kylie_Gaines.pdf"
+
+  # Social links — fill in your URLs
+  [params.social]
+    github = ""
+    twitter = ""
+    scholar = ""
+    orcid = ""
+    linkedin = ""
+    huggingface = ""
+    substack = ""
+
+[menu]
+  [[menu.main]]
+    name = "Research"
+    url = "/research/"
+    weight = 1
+  [[menu.main]]
+    name = "Teaching"
+    url = "/teaching/"
+    weight = 2
+  [[menu.main]]
+    name = "CV"
+    url = "/files/CV_Kylie_Gaines.pdf"
+    weight = 3
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML"]
+  section = ["HTML"]
+  page = ["HTML"]

@@ -1,0 +1,69 @@
+# ============================================================
+#  PAPERS — Edit this file to update your publications!
+#  Just add a new entry following the format below.
+#  Push to GitHub and the site rebuilds automatically.
+# ============================================================
+
+collaboration_note: "Drafts available upon request. I welcome collaboration, coauthorship inquiries, and comments on any of these papers. Please reach out via email at kyliegaines@ucsb.edu."
+
+coauthors:
+  pei_te_lien:
+    name: "Pei-te Lien"
+    url: ""
+  denis_lomov:
+    name: "Denis Lomov"
+    url: "https://denislomov.com/"
+
+published:
+  - title: "Ethnic Nationalism and Support for the Black Lives Matter Movement among Black and Asian Americans"
+    authors: "<strong>Gaines, K.</strong>, & Lien, P.-T."
+    journal: "Journal of Race, Ethnicity, and Politics"
+    year: 2024
+    status: "Published"
+    pdf: ""
+    doi: ""
+    replication: ""
+    slides: ""
+    abstract: ""
+    research_question: ""
+
+working_paper_categories:
+  - name: "Race, Identity & Political Behavior"
+    papers:
+      - title: "They Know What it Means: Black Millennials, Gen Z, and the Independent Party"
+        authors: "<strong>Gaines, K.</strong>"
+        year: ""
+        status: "Working Paper"
+        pdf: ""
+        abstract: ""
+        research_question: ""
+        conferences: []
+
+      - title: "'Hearing my people, but not seeing my people:' Boundary Work on TikTok"
+        authors: "<strong>Gaines, K.</strong>"
+        year: ""
+        status: "Working Paper"
+        pdf: ""
+        abstract: ""
+        research_question: ""
+        conferences: []
+
+      - title: "Dissemination and Disavowal: The Memeification of Black Nationalist Rhetoric"
+        authors: "<strong>Gaines, K.</strong>"
+        year: ""
+        status: "Working Paper"
+        pdf: ""
+        abstract: ""
+        research_question: ""
+        conferences: []
+
+  - name: "Environmental Justice & Climate Policy"
+    papers:
+      - title: "Achieving a Just Net Zero?: Manufactured Acceptance to CCS Permits in the United States"
+        authors: "<strong>Gaines, K.</strong>, & <a href='https://denislomov.com/' target='_blank'>Lomov, D.</a>"
+        year: ""
+        status: "Working Paper"
+        pdf: ""
+        abstract: ""
+        research_question: ""
+        conferences: []
