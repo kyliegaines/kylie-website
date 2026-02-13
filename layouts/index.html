@@ -195,6 +195,30 @@
 </section>
 {{ end }}
 
+<!-- Presentations -->
+{{ with .Site.Data.presentations }}
+{{ if .presentations }}
+<section class="recent-research">
+  <div class="container">
+    <h2>Presentations & Talks</h2>
+    <div class="presentations-list">
+      {{ range .presentations }}
+      <div class="presentation-entry">
+        <span class="presentation-year">{{ .year }}</span>
+        <span class="presentation-event">{{ .event }}</span>
+        <span class="presentation-type">{{ .type }}</span>
+        <span class="presentation-links">
+          {{ with .slides }}<a href="{{ . | relURL }}" class="paper-link" target="_blank">Slides</a>{{ end }}
+          {{ with .poster }}<a href="{{ . | relURL }}" class="paper-link" target="_blank">Poster</a>{{ end }}
+        </span>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
 <!-- Awards & Fellowships -->
 {{ with .Site.Data.awards }}
 {{ if .awards }}

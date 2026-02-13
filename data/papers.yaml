@@ -21,10 +21,10 @@ published:
     year: 2024
     status: "Published"
     pdf: ""
-    doi: ""
+    doi: "https://www.cambridge.org/core/journals/journal-of-race-ethnicity-and-politics/article/ethnic-nationalism-and-support-for-the-black-lives-matter-movement-among-black-and-asian-americans/9FDA30A020F64E9E78587334395323BF"
     replication: ""
     slides: ""
-    abstract: ""
+    abstract: "This article examines how ethnic nationalism shapes support for the Black Lives Matter movement among Black and Asian Americans. Using survey data, we find that ethnic nationalist attitudes significantly predict BLM support, revealing shared mechanisms of racial solidarity that operate across distinct communities of color."
     research_question: ""
 
 working_paper_categories:
@@ -35,7 +35,7 @@ working_paper_categories:
         year: ""
         status: "Working Paper"
         pdf: ""
-        abstract: ""
+        abstract: "This paper investigates why younger Black Americans increasingly identify as political independents despite maintaining strong progressive policy preferences. I argue that generational shifts in racial consciousness and disillusionment with two-party politics drive Black Millennials and Gen Z toward independent identification as a deliberate political strategy rather than a sign of disengagement."
         research_question: ""
         conferences: []
 
@@ -44,7 +44,7 @@ working_paper_categories:
         year: ""
         status: "Working Paper"
         pdf: ""
-        abstract: ""
+        abstract: "This paper examines how Black creators on TikTok engage in racial boundary work through audiovisual content, negotiating who belongs within and outside Black community boundaries. Drawing on digital ethnography, I show how short-form video creates new sites for policing, affirming, and contesting racial authenticity in ways that both reinforce and destabilize existing identity categories."
         research_question: ""
         conferences: []
 
@@ -53,7 +53,7 @@ working_paper_categories:
         year: ""
         status: "Working Paper"
         pdf: ""
-        abstract: ""
+        abstract: "This paper traces how Black nationalist rhetoric is translated into internet memes, examining the tension between ideological dissemination and strategic disavowal in digital spaces. I argue that memeification simultaneously broadens the reach of Black nationalist ideas to new audiences while diluting their political coherence, creating a cycle of viral adoption and ideological distancing."
         research_question: ""
         conferences: []
 
@@ -64,6 +64,6 @@ working_paper_categories:
         year: ""
         status: "Working Paper"
         pdf: ""
-        abstract: ""
+        abstract: "This paper examines whether the EPA's Class VI permitting process for carbon capture and storage projects adequately addresses community concerns or structurally manufactures consent. Analyzing public comments from permitted CCS projects, we find that regulatory scope limitations systematically filter out environmental justice concerns, creating an appearance of public acceptance that masks unresolved community opposition."
         research_question: ""
         conferences: []
