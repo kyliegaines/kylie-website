@@ -1,4 +1,4 @@
-baseURL = "https://kyliegaines.com/"
+baseURL = "https://kyliegaines.github.io/kylie-website/"
 languageCode = "en-us"
 title = "Kylie Gaines"
 # No external theme — uses local layouts/
