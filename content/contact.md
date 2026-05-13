@@ -15,4 +15,4 @@ Santa Barbara, CA 93106
 **Affiliations:**
 
 - [Department of Political Science, UCSB](https://www.polsci.ucsb.edu/)
-- [Blum Center on Poverty, Inequality, and Democracy] (https://www.blumcenter.ucsb.edu/) 
+- [Blum Center on Poverty, Inequality, and Democracy](https://www.blumcenter.ucsb.edu/)
